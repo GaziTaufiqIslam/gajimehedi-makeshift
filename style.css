@@ -309,7 +309,11 @@ body{
 }
 .header .logo {
 	float: left;
-	margin-top: 18px;
+	margin-top: 8px;
+	height: 100%;
+}
+.header .logo img {
+	height: 100%;
 }
 .header .navbar {
 	background: none;
@@ -428,6 +432,10 @@ body{
 .header .single-widget.btn{
 	margin-left:0;
 }
+.header .main-menu .nav{
+	justify-content: center;
+}
+
 /* Dropdown Menu */
 .header .nav li .dropdown {
 	background: #fff;
@@ -488,7 +496,6 @@ body{
 /* Right Bar */
 .header.style2 .main-menu{
 	display:inline-block;
-	float:left;
 }
 .header .right-bar {
 	float: right;
@@ -693,11 +700,11 @@ body{
 	background: #fff;
 	margin: 0;
 	padding: 0;
-	height: 230px;
+	height: auto;
 }
 .schedule .schedule-inner {
 	position: relative;
-	transform: translateY(-50%);
+	transform: translateY(-30%);
 	z-index:9;
 }
 .schedule .single-schedule {
@@ -761,18 +768,28 @@ body{
 .schedule .single-schedule span{
 	display:block;
 	color:#fff;
+	margin-top: 4px;
 }
-.schedule .single-schedule h4{
-	font-size: 20px;
+.schedule .single-schedule  h4, .schedule .single-schedule  h5,.schedule .single-schedule h6{
 	font-weight:600;
 	display:inline-block;
 	text-transform:capitalize;
 	color:#fff;
 	margin-top:13px;
 }
+.schedule .single-schedule h4{
+	font-size: 20px;
+}
+.schedule .single-schedule h5{
+	font-size: 18px;
+}
+.schedule .single-schedule .single-content:nth-child(3){
+	margin-top: 32px;
+}
+	
 .schedule .single-schedule p{
 	color:#fff;
-	margin-top:22px;
+	margin-top:16px;
 }
 .schedule .single-schedule a {
 	color: #fff;
@@ -800,12 +817,10 @@ body{
 .schedule .single-schedule a i{
 	margin-left:10px;
 }
-.schedule .single-schedule .time-sidual{
-	
-}
+
 .schedule .single-schedule .time-sidual{
 	overflow:hidden;
-	margin-top:17px;
+	margin-top:12px;
 }
 .schedule .single-schedule .time-sidual li {
 	display: block;
@@ -845,6 +860,11 @@ body{
 	position:relative;
 	padding:10px 20px;
 }
+.Feautes .single-features img{
+	max-width: 128px;
+	background-color: #e3e5e7;
+	border-radius: 100%;
+}
 .Feautes .single-features::before {
 	position: absolute;
 	content: "";
@@ -882,7 +902,7 @@ body{
 	border-color:transparent;
 }
 .Feautes .single-features h3{
-	padding-top: 128px;
+	padding-top: 24px;
 	color:#2C2D3F;
 	font-weight:600;
 	font-size:21px;
@@ -1715,21 +1735,32 @@ body{
 	Start Clients CSS
 ==========================*/
 .clients{
-	background-image:url('img/client-bg.jpg');
+	/* background-image:url('img/client-bg.jpg'); */
 	background-size:cover;
 	background-position:center;
 	padding:100px 0px;
 	position:relative;
 }
+.clients::before{
+	background-color: #fff;
+}
 .clients .single-clients{
-	
+	display: flex;
+	justify-content: center;
+	height: 100%;
 }
 .clients .single-clients img {
 	width: 100%;
+	max-width: 200px;
+	max-height: 180px;
 	cursor: pointer;
 	text-align: center;
 	float: none;
 	padding: 0 35px;
+	align-self: center;
+}
+.clients .owl-carousel .owl-stage {
+	display: flex;
 }
 /*========================
 	End Clients CSS
@@ -3453,7 +3484,7 @@ body{
 	display: inline-block;
 }
 .error-page .error-inner h1 {
-	font-size: 140px;
+	font-size: 48px;
 	text-shadow: 3px 5px 2px #3333;
 	color: #1A76D1;
 	font-weight: 700;
@@ -4015,16 +4046,29 @@ body{
 .footer .single-footer .social li a i{
 	
 }
+.footer .f-link {
+	align-items: center;
+}
+.footer .f-link h2{
+	text-align: center;
+}
+.footer .f-link .row {
+	justify-content: center;
+}
+.footer .f-link .row ul {
+	display: flex;
+	justify-content: center;
+}
 .footer .single-footer.f-link li a i{
 	margin-right:10px;
 }
 .footer .single-footer.f-link li{
-	display:block;
-	margin-bottom:12px;
+	display: inline-block;
+	margin: 12px 12px;
 }
-.footer .single-footer.f-link li:last-child{
+/* .footer .single-footer.f-link li:last-child{
 	margin:0;
-}
+} */
 .footer .single-footer.f-link li a {
 	display: block;
 	color: #fff;
@@ -4050,7 +4094,8 @@ body{
 .footer .single-footer h2::before{
 	position: absolute;
 	content: "";
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	bottom: 0px;
 	height: 3px;
 	width: 50px;
