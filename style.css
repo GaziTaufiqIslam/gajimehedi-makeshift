@@ -1487,7 +1487,6 @@ body{
 	border-radius: 3px;
 	margin: 0 0 0 -52px;
 	margin-top: 49px;
-	box-sizing: ;
 }
 .testimonials .owl-dots .owl-dot {
 	display: inline-block;
@@ -1571,7 +1570,9 @@ body{
 	color: #868686;
 	margin-top: 3px;
 }
-.departments .department-tab .tab-pane .department-left{}
+/* .departments .department-tab .tab-pane .department-left{
+
+} */
 .departments .department-tab .tab-pane .department-left h3{
 	color:#2C2D3F;
 	font-weight:600;
