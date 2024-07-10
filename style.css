@@ -3727,6 +3727,13 @@ body{
 /*=========================
 	Start About Us CSS
 ===========================*/
+
+.about-page .hero{
+	width: 90%;
+	max-width: 320px;
+	margin-bottom: 1rem;
+
+}
 .about-area {
   position: relative;
   z-index: 1;
@@ -3988,6 +3995,11 @@ body{
 }
 
 .past-positions .past-position {
+	margin: 1rem 0;
+	text-align: left;
+}
+
+.attached-to .past-position {
 	margin: 1rem 0;
 	text-align: left;
 }
