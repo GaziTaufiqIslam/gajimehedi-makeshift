@@ -3986,11 +3986,46 @@ body{
   color: #ffffff;
   border-radius: 100%;
 }
+
+.past-positions .past-position {
+	margin: 1rem 0;
+	text-align: left;
+}
 /* End Our Mission CSS */
 
 /*=========================
 	End About Us CSS
 ===========================*/
+/*=========================
+	Start Appointment CSS
+===========================*/
+.appointment-page .clinics {
+	margin-bottom: 2.5rem;
+}
+.appointment-page .clinics h3{
+	text-align: center;
+}
+.appointment-page .clinics .single-clinic{
+	margin: 5rem 0;
+}
+.appointment-page .single-clinic h5{
+	margin-bottom: 1rem;
+}
+.appointment-page .single-clinic .time-sidual {
+	margin-bottom: 1rem;
+}
+.appointment-page .single-clinic .time-sidual span{
+	margin-left: 1rem;
+}
+
+
+/*=========================
+	End Appointment CSS
+===========================*/
+
+
+
+
 
 /*=========================
 	Start Footer CSS
@@ -4080,7 +4115,8 @@ body{
 	font-weight: 400;
 }
 .footer .single-footer.f-link li a:hover{
-	padding-left:8px;
+	/* padding-left:8px; */
+	color: rgb(188, 190, 211);
 }
 .footer .single-footer h2{
 	color:#fff;
