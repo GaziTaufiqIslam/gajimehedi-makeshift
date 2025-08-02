@@ -312,9 +312,9 @@ body{
 	margin-top: 8px;
 	height: 100%;
 }
-.header .logo img {
+/* .header .logo img {
 	height: 100%;
-}
+} */
 .header .navbar {
 	background: none;
 	box-shadow: none;
@@ -3995,14 +3995,21 @@ body{
 }
 
 .past-positions .past-position {
-	margin: 1rem 0;
+	margin: 2rem 0;
 	text-align: left;
 }
 
 .attached-to .past-position {
-	margin: 1rem 0;
+	margin: 2rem 0;
 	text-align: left;
 }
+
+.past-position .pp-logo {
+	width: 100%;
+	max-width: 128px;
+	margin: 0 auto;
+}
+
 /* End Our Mission CSS */
 
 /*=========================
